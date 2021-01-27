@@ -1,0 +1,11 @@
+#cloud-config
+package_update: true
+packages:
+  - docker.io
+write_files:
+  - path: /root/index.html
+    content: |
+      Este es el servidor 1
+runcmd:
+  - cd /root
+  - docker run -d -v /root/index.html:/usr/share/nginx/html/index.html -p 80:80 nginx
