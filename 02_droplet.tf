@@ -6,6 +6,6 @@ resource "digitalocean_droplet" "web-1" {
   name      = "web-1"
   region    = "nyc1"
   size      = "s-1vcpu-1gb"
-  user_data = file("userdata.yaml")
-  ssh_keys  = [digitalocean_ssh_key.ssh2.fingerprint]
+  user_data = file("userdata_docker-compose.yaml")
+  ssh_keys  = [digitalocean_ssh_key.ssh_amrc.fingerprint]
 }
