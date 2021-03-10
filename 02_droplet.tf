@@ -8,4 +8,5 @@ resource "digitalocean_droplet" "web-1" {
   size      = "s-1vcpu-1gb"
   user_data = file("userdata_docker-compose.yaml")
   ssh_keys  = [digitalocean_ssh_key.ssh_amrc.fingerprint]
+  monitoring = true
 }
