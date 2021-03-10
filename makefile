@@ -15,4 +15,4 @@ erase:
 print_DO_PAT:
 	printenv DO_PAT
 ssh-web-1:
-	ssh -i ./SSH/id_rsa_marcos.pub root@134.122.30.126 -vv
+	ssh -i ./SSH/id_rsa_marcos.pub root@web1.marcware.es
