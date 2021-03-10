@@ -11,7 +11,8 @@ runcmd:
   - cp .env.pro .env 
   - docker pull marcware/books_app:lastest
   - docker-compose -f docker-compose-prod.yml up -d
-  - docker exec -it lumen-book composer install
+  - docker exec -it lumen-book composer update
   - chmod -R ug+rwx storage vendor
+
 
     
