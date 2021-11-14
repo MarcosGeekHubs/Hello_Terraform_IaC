@@ -9,3 +9,5 @@ Introducción a la infraestructura como código con terraforn en Digital Ocean
 - "web_domain" --> tiene que ser igual al dominio de la web
 - Token de DO
     - 	export DO_PAT= XXX
+
+- dig marcware.es

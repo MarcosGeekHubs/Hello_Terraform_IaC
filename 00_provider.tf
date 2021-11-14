@@ -1,7 +1,4 @@
 # https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs
-
-variable "do_token" {}
-
 terraform {
   required_providers {
     digitalocean = {
@@ -14,7 +11,7 @@ terraform {
 
 # Configure the DigitalOcean Provider
 provider "digitalocean" {
-  token = var.do_token
+  token = "a0443d0865ccc11f24a96fef2c227b8d7f0bc2add5f059fcb9dde1686280e09b"
   #ERROR token = "XXXXXXXXXXXX"
 }
 

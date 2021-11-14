@@ -3,5 +3,5 @@
 
 resource "digitalocean_ssh_key" "ssh_amrc" {
   name       = "ssh_amrc"
-  public_key = file("./SSH/id_rsa_marcos.pub")
+  public_key = file("./SSH/id_rsa.pub")
 }
