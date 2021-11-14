@@ -11,7 +11,7 @@ terraform {
 
 # Configure the DigitalOcean Provider
 provider "digitalocean" {
-  token = "a0443d0865ccc11f24a96fef2c227b8d7f0bc2add5f059fcb9dde1686280e09b"
+  token = "3dd85690643c850f7460f5d6ec87ea5c4afe6e14d9b5e1a036fed1069b558745"
   #ERROR token = "XXXXXXXXXXXX"
 }
 
