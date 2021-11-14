@@ -5,3 +5,16 @@
   tasks:
     - name: install apache2 
       apt: name=apache2 update_cache=yes state=latest
+    - name: stop-apache
+      service:
+        name: apache2
+        state: stopped
+    - name: Set up Apache virtualhost
+      copy:
+        src: Apache/000-default.conf
+        dest: /etc/apache2/sites-available/000-default.conf
+        force: yes
+    - name: restart-apache
+      service:
+        name: apache2
+        state: started

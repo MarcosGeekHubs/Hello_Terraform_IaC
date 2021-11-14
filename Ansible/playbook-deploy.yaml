@@ -1,16 +1,12 @@
 ---
-- hosts: all
-  become: yes
+- name: Deploy example app to my-server.com
+  hosts: web
   vars:
     ansistrano_deploy_to: "/var/www/html/"
     ansistrano_git_repo_tree: "Web"
     ansistrano_keep_releases: 3
     ansistrano_deploy_via: "git"
-    ansistrano_git_repo: https://github.com/ansistrano/symfony-deploy-example.git
-    ansistrano_git_branch: master
-    ansistrano_git_ssh_opts: "-o StrictHostKeyChecking=no"
-    ansistrano_git_depth: 1
-    ansistrano_git_identity_key_path: "./../id_rsa"
-    ansistrano_allow_anonymous_stats: no
+    ansistrano_git_repo: https://github.com/MarcosGeekHubs/Hello_Terraform_IaC
+    ansistrano_git_branch: main
   roles:
-    - { role: ansistrano.deploy }
+     - { role: ansistrano.deploy }
