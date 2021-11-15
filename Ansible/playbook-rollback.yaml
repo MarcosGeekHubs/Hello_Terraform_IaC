@@ -2,6 +2,7 @@
 - name: Rollback 
   hosts: all
   vars:
-    ansistrano_deploy_to: "/tmp/my-app.com"
+    ansistrano_deploy_to: "/var/www/html/"
+    ansistrano_git_repo_tree: "Web"
   roles:
     - { role: ansistrano.rollback }

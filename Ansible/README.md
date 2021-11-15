@@ -10,3 +10,6 @@
 - $ ansible-galaxy install --force ansistrano.deploy ansistrano.rollback
 - $ ansible-playbook --syntax-check playbook-deploy.yaml
 - $ ansible-playbook -e 'ansible_python_interpreter=python3' playbook-deploy.yaml
+
+# RollBack
+- $ ansible-playbook -e 'ansible_python_interpreter=python3' playbook-rollback.yaml
