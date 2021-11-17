@@ -8,5 +8,6 @@
     ansistrano_deploy_via: "git"
     ansistrano_git_repo: https://github.com/MarcosGeekHubs/Hello_Terraform_IaC
     ansistrano_git_branch: main
+    ansistrano_after_cleanup_tasks_file: "{{ playbook_dir }}/after_cleanup.yaml"
   roles:
      - { role: ansistrano.deploy }
