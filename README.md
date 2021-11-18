@@ -60,7 +60,7 @@ Crear un fichero llamado **inventario**
 ```
 $ ansible web1 -m ping -i inventario
 $ ansible web2 -m ping -i inventario
-$ ansible all -m ping -i inventario
+$ ansible all_web -m ping
 ```
 
 ### PlayBook
