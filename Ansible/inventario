@@ -1,3 +1,13 @@
 [web]
-147.182.219.86
-147.182.177.162
+204.48.22.18
+159.223.154.189
+
+[web1]
+web1.marcware.es
+
+[web2]
+web2.marcware.es
+
+[all_web:children]
+web1
+web2
