@@ -1,5 +1,5 @@
 --- 
-- hosts: all_web
+- hosts: web
   become: yes
   user: root
   tasks:

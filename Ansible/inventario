@@ -1,12 +1,12 @@
 [web]
-204.48.22.18
-159.223.154.189
+143.244.153.157
+143.244.153.27
 
 [web1]
-web1.marcware.es
+web1.marcware.es ansible_ssh_private_key_file=../SSH/id_rsa
 
 [web2]
-web2.marcware.es
+web2.marcware.es ansible_ssh_private_key_file=../SSH/id_rsa
 
 [all_web:children]
 web1

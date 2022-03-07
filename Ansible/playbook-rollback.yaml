@@ -1,6 +1,6 @@
 ---
 - name: Rollback 
-  hosts: all
+  hosts: web
   vars:
     ansistrano_deploy_to: "/var/www/html/"
     ansistrano_git_repo_tree: "Web"

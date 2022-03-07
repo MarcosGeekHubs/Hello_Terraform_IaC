@@ -18,5 +18,5 @@ override.tf.json
 id_rsa.pub
 id_rsa*
 _variables.tf
-SSH/id_rsa
-SSH/id_rsa.pub
+/SSH/id_rsa
+/SSH/id_rsa.pub

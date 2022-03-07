@@ -1,7 +1,7 @@
-- name: restart-apache
+- name: restart-apache-after-cleanup
   service:
       name: apache2
-      state: restart 
+      state: restarted 
 - name: Ping
   ping:
     
